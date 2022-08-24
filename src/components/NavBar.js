@@ -1,4 +1,5 @@
 import './NavBar.css'
+import { CartWidget } from './CartWidget'
 import Button from 'react-bootstrap/Button';
 
 
@@ -13,7 +14,9 @@ export const NavBar = () => {
                 <Button variant="dark m-2">Balanceo</Button>
                 <Button variant="dark m-2">Reparaciones</Button>
                 <Button variant="primary m-2">Login</Button>
+                <CartWidget />
             </nav>
+
         </div>
     )
 }
