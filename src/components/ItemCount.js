@@ -5,7 +5,6 @@ import { useState } from "react"
 export const ItemCount = ( {stock} ) => {
 
     const [counter , setCounter ] = useState (0)
-    const [agregar , setAgregar ] = useState (true)
 
 
     const sumar = () => {
@@ -19,15 +18,12 @@ export const ItemCount = ( {stock} ) => {
         }
     }
 
-    const incluiralstock = () => {
-        if (agregar){
-            setAgregar (true)
-        }else {
-            setAgregar (false)
-        }
+    const añadirAlCarro =() => {
+
+        console.log("Producto añadido al carro - cantidad :" , counter)
+
     }
 
-   
 
     return (
 
@@ -41,7 +37,7 @@ export const ItemCount = ( {stock} ) => {
                     <samp> {counter} </samp>
                 <button onClick={sumar} className="btn btn-primary">+</button>
                 <hr/>
-                <button onClick={incluiralstock} className="btn btn-success"> { agregar ? "Agregar al Carro" : "Sin Stock" } </button>
+                <button className="btn btn-success" disabled= {stock <= 0} onClick={añadirAlCarro}>Añadir al Carro</button>
                 </Card.Body>
             </Card>
 
