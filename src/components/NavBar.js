@@ -10,9 +10,9 @@ export const NavBar = () => {
                 <h1>LOGO</h1>
             </div>
             <nav className="navLinksContainers" >
-                <Button variant="dark m-2">Alineaciòn</Button>
-                <Button variant="dark m-2">Balanceo</Button>
-                <Button variant="dark m-2">Reparaciones</Button>
+                <Button variant="dark m-2">LINK1</Button>
+                <Button variant="dark m-2">LINK2</Button>
+                <Button variant="dark m-2">LINK3</Button>
                 <Button variant="primary m-2">Login</Button>
                 <CartWidget />
             </nav>

@@ -1,21 +1,34 @@
 
 
 import './ItemListContainer.css';
-import Card from 'react-bootstrap/Card';
+import { useEffect , useState } from 'react';
+import { pedirDatos } from '../helpers/pedirDatos';
+import { ItemList } from '../ItemList/ItemList';
 
 
 
+export const ItemListContainer = () => {
 
-export const ItemListContainer = ({greeting}) => {
+    const [productos, setProductos] = useState ( [] )
 
-    return(
-        <div className='containerNovedades' >
-            <Card>
-                <Card.Body>
-                    <p> {greeting} </p>
-                    <p>Tenemos Stock renovado</p>
-                </Card.Body>
-            </Card>
+    useEffect(()=>{
+
+        pedirDatos ()
+            .then((res) =>{
+            setProductos(res)
+        })
+        .catch((error) =>{
+            console.log(error)
+        })
+        .finally(()=>{
+            console.log("fin del proceso")
+        })
+
+    }, [] )
+
+    return (
+        <div>
+            < ItemList productos={productos} /> 
         </div>
     )
 }
