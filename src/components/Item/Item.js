@@ -9,7 +9,7 @@ export const Item = ( {producto} ) => {
             <p>Precio:{producto.precio} </p>
 
   
-        </div>
+        </div> 
     )
 
 }
