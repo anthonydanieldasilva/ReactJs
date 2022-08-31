@@ -9,8 +9,7 @@ export const ItemList = ( {productos} = [] ) => {
         <div className='containerNovedades' >
             <Card>
                 <Card.Body>
-                    <h2>Productos</h2>
-
+                    
                     { productos.map ((prod) =>{
                         return <Item producto={prod} key={prod.id} />
 
