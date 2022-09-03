@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardTitle, Button  } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardText, CardTitle} from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 
 export const Item = ({ producto }) => {
@@ -24,9 +25,9 @@ export const Item = ({ producto }) => {
                             <p>{producto.desc}</p>
                         </small>
                     </CardText>
-                    <Button color="success" >
-                        Ver Detalle
-                    </Button>
+
+                    <Link to={`/item/${producto.id}`} className="btn btn-secondary btn-lg btn-block">Ver más</Link>
+
                 </CardImgOverlay>
             </Card>
         </div>

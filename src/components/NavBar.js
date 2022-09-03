@@ -1,20 +1,20 @@
 import './NavBar.css'
 import { CartWidget } from './CartWidget'
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'
 
 
 export const NavBar = () => {
-    return(
+    return (
         <div className="headerContainer">
             <div className="headerLogo" >
-                <h1>LOGO</h1>
+                <Link to='/'><h2>LOGO</h2></Link>
             </div>
             <nav className="navLinksContainers" >
-                <Button variant="dark m-2">LINK1</Button>
-                <Button variant="dark m-2">LINK2</Button>
-                <Button variant="dark m-2">LINK3</Button>
-                <Button variant="primary m-2">Login</Button>
-                <CartWidget />
+                <Link to='/productos/viandas' className='btn btn-dark btn-lg'>Viandas</Link>
+                <Link to='/productos/pastas' className='btn btn-dark btn-lg'>Pastas</Link>
+                <Link to='/productos/panificados' className='btn btn-dark btn-lg'>Panificados</Link>
+
+                <CartWidget/>  
             </nav>
 
         </div>
