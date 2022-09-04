@@ -10,7 +10,7 @@ export const Item = ({ producto }) => {
         <div>
             <Card inverse>
                 <CardImg
-                    src="https://picsum.photos/900/270?grayscale" style={{ height: "15rem", objectFit: "cover", }}
+                    src={producto.img} style={{ height: "15rem", objectFit: "cover", }}
                 />
                 <CardImgOverlay>
                     <CardTitle>
