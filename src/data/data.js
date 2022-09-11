@@ -4,53 +4,105 @@ export const stock = [
         nombre: 'Producto 1',
         precio: 1000,
         img: './img/anaparck.jpg',
-        stock: 70,
+        stock: 6,
         desc: 'Un gran producto',
-        categoria: 'viandas'
+        categoria: 'viandas',
+        presentacion: [
+            {
+                value: '500kg',
+                text: 'Medio Kilo'
+            },
+            {
+                value: '1000kg',
+                text: 'Un Kilo'
+            },
+        ],
     },
     {
         id: 2,
         nombre: 'Producto 2',
         precio: 2000,
         img: './img/isondu.jpg' ,
-        stock: 50,
+        stock: 13,
         desc: 'Un gran producto',
-        categoria: 'viandas'
+        categoria: 'viandas',
+        presentacion: [
+            {
+                value: '500kg',
+                text: 'Medio Kilo'
+            },
+            {
+                value: '1000kg',
+                text: 'Un Kilo'
+            },
+        ],
     },
     {
         id: 3,
         nombre: 'Producto 3',
         precio: 3000,
         img: './img/campoclaro.jpg',
-        stock: 30,
+        stock: 5,
         desc: 'Un gran producto',
-        categoria: 'pastas'
+        categoria: 'pastas',
+        presentacion: [
+            {
+                value: '1000kg',
+                text: 'Un Kilo'
+            },
+        ],
     },
     {
         id: 4,
         nombre: 'Producto 4',
         precio: 4000,
         img: './img/kraus.jpg',
-        stock: 560,
+        stock: 11,
         desc: 'Un gran producto',
-        categoria: 'pastas'
+        categoria: 'pastas',
+        presentacion: [
+            {
+                value: '500kg',
+                text: 'Medio Kilo'
+            },
+        ],
     },
     {
         id: 5,
         nombre: 'Producto 5',
         precio: 5000,
         img: './img/picadavieja.png',
-        stock: 890,
+        stock: 10,
         desc: 'Un gran producto',
-        categoria: 'panificados'
+        categoria: 'panificados',
+        presentacion: [
+            {
+                value: '500kg',
+                text: 'Medio Kilo'
+            },
+            {
+                value: '1000kg',
+                text: 'Un Kilo'
+            },
+        ],
     },
     {
         id: 6,
         nombre: 'Producto 6',
         precio: 6000,
         img: './img/fidel.jpg',
-        stock: 440,
+        stock: 6,
         desc: 'Un gran producto',
-        categoria: 'panificados'
+        categoria: 'panificados',
+        presentacion: [
+            {
+                value: '500kg',
+                text: 'Medio Kilo'
+            },
+            {
+                value: '1000kg',
+                text: 'Un Kilo'
+            },
+        ],
     },
 ]

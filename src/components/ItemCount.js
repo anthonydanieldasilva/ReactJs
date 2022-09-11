@@ -1,14 +1,11 @@
-import './ItemCounts.css';
+
 import Card from 'react-bootstrap/Card';
-import { useState } from "react"
 
-export const ItemCount = ( {stock} ) => {
-
-    const [counter , setCounter ] = useState (0)
+export const ItemCount = ( {max, counter, setCounter, handleAgregar} ) => {
 
 
     const sumar = () => {
-        if(counter < stock )
+        if (counter < max)
         setCounter(counter + 1)
     }
 
@@ -18,26 +15,19 @@ export const ItemCount = ( {stock} ) => {
         }
     }
 
-    const añadirAlCarro =() => {
-
-        console.log("Producto añadido al carro - cantidad :" , counter)
-
-    }
-
-
     return (
 
-        <div className='containerContador' >
+        <div>
 
             <Card>
                 <Card.Body>
-                <h4>Contador</h4>
-                <hr/>
                 <button onClick={restar} className="btn btn-primary">-</button>
                     <samp> {counter} </samp>
                 <button onClick={sumar} className="btn btn-primary">+</button>
+
                 <hr/>
-                <button className="btn btn-success" disabled= {stock <= 0} onClick={añadirAlCarro}>Añadir al Carro</button>
+
+                <button  onClick={handleAgregar} className="btn btn-success">Añadir al Carro</button>
                 </Card.Body>
             </Card>
 
