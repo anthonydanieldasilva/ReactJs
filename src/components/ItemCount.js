@@ -3,17 +3,17 @@ import Card from 'react-bootstrap/Card';
 
 export const ItemCount = ( {max, counter, setCounter, handleAgregar} ) => {
 
-
-    const sumar = () => {
-        if (counter < max)
-        setCounter(counter + 1)
-    }
-
     const restar = () => {
         if (counter > 0){
             setCounter(counter - 1)
         }
     }
+
+    const sumar = () => {
+        if (counter < max)
+        setCounter(counter + 1)
+    }
+    
 
     return (
 
@@ -21,13 +21,38 @@ export const ItemCount = ( {max, counter, setCounter, handleAgregar} ) => {
 
             <Card>
                 <Card.Body>
-                <button onClick={restar} className="btn btn-primary">-</button>
-                    <samp> {counter} </samp>
-                <button onClick={sumar} className="btn btn-primary">+</button>
+
+                <button 
+                    className={ counter===0 ? "btn btn-outline-danger" : "btn btn-outline-primary"}
+                    onClick={restar} 
+                    disabled={ counter===0 }>
+
+                    -
+
+                </button>
+
+                <samp> {counter} </samp>
+
+                <button 
+                    className={ counter===max ? "btn btn-outline-danger" : "btn btn-outline-primary" }
+                    onClick={sumar}
+                    disabled={ counter===max }>
+
+                    +
+
+                </button>
 
                 <hr/>
 
-                <button  onClick={handleAgregar} className="btn btn-success">Añadir al Carro</button>
+                <button 
+                    onClick={handleAgregar}
+                    className="btn btn-success"
+                    disabled={counter ===0}>
+
+                    Añadir al Carro   
+
+                </button>
+
                 </Card.Body>
             </Card>
 

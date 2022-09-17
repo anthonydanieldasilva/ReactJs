@@ -7,7 +7,7 @@ export const NavBar = () => {
     return (
         <div className="headerContainer">
             <div className="headerLogo" >
-                <Link to='/'><h2>LOGO</h2></Link>
+                <Link to='/'><h2>YerbaMate Oficial</h2></Link>
             </div>
             <nav className="navLinksContainers" >
                 <Link to='/productos/viandas' className='btn btn-dark btn-lg'>Viandas</Link>
