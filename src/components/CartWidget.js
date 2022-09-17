@@ -10,9 +10,6 @@ export const CartWidget = () => {
 
     const {cartQuantity}=useContext(CartContext)
 
-
-
-
     return (
         <Link to="/cart">
             <div className='carroDeCompras'>
