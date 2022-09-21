@@ -23,7 +23,7 @@ export const stock = [
         nombre: 'Producto 2',
         precio: 2000,
         img: './img/isondu.jpg' ,
-        stock: 13,
+        stock: 0,
         desc: 'Un gran producto',
         categoria: 'viandas',
         presentacion: [

@@ -32,7 +32,7 @@ export const CartProvider = ( {children} ) => {
     const vaciarElCarro =()=>{
         Swal.fire({
             title: '¿Estas seguro?',
-            text: "!remover item de tu compra!",
+            text: "! Remover item de tu compra !",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',

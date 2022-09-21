@@ -10,7 +10,7 @@ export const Item = ({ producto }) => {
         <div>
             <Card inverse>
                 <CardImg
-                    src={producto.img} style={{ height: "15rem", objectFit: "cover", }}
+                    src={producto.img} style={{ height: "18rem", objectFit: "cover", }}
                 />
                 <CardImgOverlay>
                     <CardTitle>
@@ -26,7 +26,15 @@ export const Item = ({ producto }) => {
                         </small>
                     </CardText>
 
-                    <Link to={`/item/${producto.id}`} className="btn btn-secondary btn-lg btn-block">Ver más</Link>
+                    {
+                        producto.stock > 0
+
+                        ?<Link to={`/item/${producto.id}`} className="btn btn-secondary btn-lg btn-block">Ver más</Link>
+                        :<>
+                            <h3>Sin Stock</h3>
+                            <button className='btn btn-info'>¿Querès recibir un aviso?</button>
+                        </> 
+                    }
 
                 </CardImgOverlay>
             </Card>
