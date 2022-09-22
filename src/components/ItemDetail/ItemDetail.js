@@ -9,7 +9,7 @@ export const ItemDetail = ({item}) => {
     
     const {cart, agregarAlcarro, isincart} = useContext(CartContext)
 
-    console.log(cart)
+    /*console.log(cart)*/
 
     const [cantidad, setCantidad] = useState (1)
     const [presentacion, setPresentacion] = useState ( item.presentacion[0].value )
