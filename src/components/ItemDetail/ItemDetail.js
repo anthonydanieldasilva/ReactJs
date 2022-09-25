@@ -12,7 +12,7 @@ export const ItemDetail = ({item}) => {
     /*console.log(cart)*/
 
     const [cantidad, setCantidad] = useState (1)
-    const [presentacion, setPresentacion] = useState ( item.presentacion[0].value )
+    const [presentacion, setPresentacion] = useState ( item.presentacion)
 
     const handleAgregar = () =>{
         const itemEnviadoAlcarro = {
@@ -32,9 +32,10 @@ export const ItemDetail = ({item}) => {
             <h3>{item.nombre}</h3>
             <p>{item.desc}</p>
             <p>{item.category}</p>
+            <hr/>
             <h4>Precio:${item.precio}</h4>
             <hr/>
-
+            <p>Selecciona tu Opción / Peso neto en "Gramos"</p>
             <Select
             options={item.presentacion} 
             onSelect={setPresentacion}

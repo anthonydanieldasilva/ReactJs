@@ -38,6 +38,7 @@ export const Cart =()=>{
             <h2>Total: ${cartTotal()} </h2>
 
             <button onClick={vaciarElCarro} className="btn btn-danger">Vaciar el carro</button>
+            <Link className="btn btn-success mx-3" to="/Checkout">Finalizar la Compra</Link>
   
         </div>
     )

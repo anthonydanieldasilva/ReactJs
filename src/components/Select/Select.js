@@ -8,13 +8,17 @@ export const Select = ( {options=[], onSelect} )=>{
 
     return(
 
-        <select onChange={handleSelect} >
+        <select onChange={handleSelect}>
             {
                 options.map((opt) =>
-                    <option key={opt.value} value={opt.value}>{opt.text}</option>
+                <option key={opt}>{opt}</option>
                 )
             }
         </select>
 
     )
 }
+
+/*
+<option key={opt.value}></option>
+value={opt.value}>{opt.text*/
