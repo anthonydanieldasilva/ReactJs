@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Navigate } from "react-router-dom"
 import { useCartContext } from "../context/CartContext"
-
+import { addDoc, collection } from "firebase/firestore"
+import { db } from "../../firebase/fireconfig"
 
 export const Checkout = () => {
 
-    const {cart, cartTotal  } = useCartContext()
+    const {cart, cartTotal, compraFinalizada } = useCartContext()
 
 
     const [values, setValues] = useState({
@@ -45,8 +46,13 @@ export const Checkout = () => {
             return
         } 
 
-        console.log(orden)
+        const ordenReferencia = collection( db, 'ordenes' )
 
+        addDoc( ordenReferencia , orden )
+            .then((doc)=>{
+            console.log(doc.id)
+            compraFinalizada(doc.id)
+        })
     }
 
     if(cart.length ===0){
