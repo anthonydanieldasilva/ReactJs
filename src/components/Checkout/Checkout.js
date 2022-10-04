@@ -95,7 +95,7 @@ export const Checkout = () => {
                     onChange={HandleInputChange}
                     type={"text"}
                     className="my-3 form-control"
-                    placeholder="Tu drección">
+                    placeholder="Tu dirección">
                 </input>
 
 

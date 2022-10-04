@@ -8,12 +8,11 @@
     align-items: center;
 }
 .headerLogo {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 500;
-    padding: 30px;
+    padding: 80px;
 }
 .navLinksContainers{
     display: flex;
     align-items: center;
-    padding: 20px; 
 }

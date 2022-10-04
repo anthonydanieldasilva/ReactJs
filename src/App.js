@@ -9,7 +9,6 @@ import { CartProvider } from "./components/context/CartContext";
 import { Checkout } from "./components/Checkout/Checkout";
 
 
-
 function App() {
 
   return (

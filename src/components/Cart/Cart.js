@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { HiTrash } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link , } from "react-router-dom";
 
 
 
@@ -22,23 +22,22 @@ export const Cart =()=>{
     return(
         <div className="container my-4">
 
-            <h2>Tus productos:</h2>
+            <h2>Tus productos seleccionados :</h2>
             <hr/>
             {cart.map((item) => (
                 <div key={item.id}>
                     <h3>{item.nombre}</h3>
                     <p>Precio:{item.precio}</p>
                     <p>Cantidad:{item.cantidad}</p>
-                    <small>Presentacion: {item.presentacion}</small>
-                    <hr />
-                    <button onClick={() => RemoverItem(item.id)} className="btn btn-danger mx-2 "> <HiTrash /> </button>
+                    <button onClick={() => RemoverItem(item.id)} className="btn btn-danger btn-sm"> <HiTrash/> Quitar {item.nombre}</button>
+                    <hr/>
                 </div>
             ))}
 
             <h2>Total: ${cartTotal()} </h2>
-
-            <button onClick={vaciarElCarro} className="btn btn-danger">Vaciar el carro</button>
-            <Link className="btn btn-success mx-3" to="/Checkout">Finalizar la Compra</Link>
+            <hr/>
+            <button onClick={vaciarElCarro} className="btn btn-danger btn-lg">Vaciar Carro</button>
+            <Link className="btn btn-success btn-lg mx-3" to="/Checkout">Finalizar Compra</Link>
   
         </div>
     )

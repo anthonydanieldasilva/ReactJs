@@ -7,12 +7,13 @@ export const NavBar = () => {
     return (
         <div className="headerContainer">
             <div className="headerLogo" >
-                <Link to='/'><h2>YerbaMate Oficial</h2></Link>
+                <Link to='/'><h2>Yerba Mate Oberà</h2></Link>
             </div>
             <nav className="navLinksContainers" >
-                <Link to='/productos/viandas' className='btn btn-dark btn-lg'>Viandas</Link>
-                <Link to='/productos/pastas' className='btn btn-dark btn-lg'>Pastas</Link>
-                <Link to='/productos/panificados' className='btn btn-dark btn-lg'>Panificados</Link>
+
+                <Link to='/productos/canchada' className='btn btn-secondary btn-lg me-md-2'>Cancháda</Link>
+                <Link to='/productos/natural' className='btn btn-secondary btn-lg me-md-2'>Natural</Link>
+                <Link to='/productos/barbacua' className='btn btn-secondary btn-lg me-md-2'>Barbacuá</Link>
 
                 <CartWidget/>  
             </nav>

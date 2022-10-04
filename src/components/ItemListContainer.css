@@ -1,6 +1,7 @@
-
 .containerNovedades{
-    height:200px;
-    padding: 30px;
-    background: linear-gradient(360deg, rgb(59, 57, 57), white);
+    display: flex;
+    flex-wrap: wrap;
+    height: 80 rem;
+    padding: 80px;
+    background: linear-gradient(360deg, rgb(59, 57, 57), rgb(255, 255, 255));
 }

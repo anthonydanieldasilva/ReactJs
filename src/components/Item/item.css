@@ -1,0 +1,22 @@
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 750px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.imagen{
+    max-width: 900%;
+    height: 550px;
+}
+  
+.estilprecio {
+    color: rgb(154, 154, 154);
+    font-size: 32px;
+}
+.estilostock {
+    color: rgb(23, 99, 36);
+    font-size: 28px;
+}
+
