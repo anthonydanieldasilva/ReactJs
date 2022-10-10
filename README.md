@@ -1,10 +1,14 @@
-# Bienvenidos a Yerba mate Oberá Oficial React App
+# Yerba mate Oberá React App
 
-Este proyecto está desarrollado íntegramente en ReactJs = View here: [Create React App](https://github.com/facebook/create-react-app).
+Bienvenidos, Este proyecto está desarrollado íntegramente en ReactJs
 
-## ¿Dónde nace la Idea?
+## ¿Como nace la Idea?
 
-In the project directory, you can run:
+Soy oriundo de la provincia de Misiones, Argentina. Aquí en esta verde y húmeda selva, el principal engranaje productivo y comercial es el cultivo de la Yerba Mate.
+Tanto su cultivo, como también su cosecha, el proceso de secado, posterior empaquetado y comercialización se realizan íntegramente en mi pueblo natal…
+Hecha esta rápida lectura de mercado, la conclusión es un resultado inminente:
+“ La creación de Una single-page application donde poder comprar todas las marcas de Yerba Mate”.
+
 
 ### `npm start`
 
