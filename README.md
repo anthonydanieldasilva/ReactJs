@@ -10,13 +10,9 @@ Hecha esta rápida lectura de mercado, la conclusión es un resultado inminente:
 “Crear de Una single-page application donde poder comprar todas las marcas de Yerba Mate”
 
 
-### `npm start`
+### ¿Qué veras en este Sitio Web?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Una vez dentro, el panel principal de la Web te dará muestra de todas las marcas de Yerba mate que comercializamos. Podrás ver cada marca con su nombre y packaging original para guiarte hacia tu compra ideal y sin equivocaciones. Veras cada una de estas con sus cantidades en stock y el precio previo a cerrar tu compra. La descripción también es un detalle a tener en cuenta, leer de donde proviene cada producto y sus características es de suma importancia. 
 
 ### `npm test`
 
