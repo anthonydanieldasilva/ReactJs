@@ -19,3 +19,6 @@ Una vez dentro, el panel principal de la Web te dará muestra de todas las marca
 Échale un vistazo a nuestro menú para enriquecer tu búsqueda. Veras que posees tres botones sobre la parte superior derecha del sitio: Cancháda / Natural / Barbacuá.
 Si alguno de estos tipos de yerba es de tu predilección, podes generar mediante un solo click un filtrado sobre todo el stock de productos disponibles para acercarte más rápidamente y en detalles a tus gustos de compra…
 
+¿Como compro mis paquetes de Yerba?
+
+Luego de hallar tu producto y sumarlo a tu carro, con un simple click en “finalizar Compra” deveras rellenar los campos solicitados con tus datos personales para que luego te enviemos el numero de Orden personal asociada a la compra que has hecho… Y eso es todo.
